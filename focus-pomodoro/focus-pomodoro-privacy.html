@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Focus Pomodoro Timer</title>
+  <meta name="description" content="Privacy policy for Focus Pomodoro Timer. The extension stores timer settings locally and does not collect or transmit personal data." />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#ff6b00;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      --maxw:960px;
+      --pad:28px;
+      --mono: "Courier New", monospace;
+      --text:#e6eef6;
+      color-scheme: dark;
+    }
+    html,body{min-height:100%}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:
+        radial-gradient(1000px 400px at 10% 10%, rgba(255,107,0,0.06), transparent 8%),
+        radial-gradient(800px 300px at 90% 90%, rgba(76,175,80,0.03), transparent 8%),
+        var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:40px 20px;
+      overflow-x:hidden;
+    }
+
+    .container{
+      width:min(100%, var(--maxw));
+      margin:0 auto;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)), var(--card);
+      border-radius:var(--radius);
+      box-shadow: 0 10px 40px rgba(2,6,23,0.7);
+      border: 1px solid rgba(255,255,255,0.03);
+      overflow:hidden;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      padding:var(--pad);
+      border-bottom:1px solid rgba(255,255,255,0.02);
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+      backdrop-filter: blur(6px);
+      flex-wrap:wrap;
+    }
+
+    .logo {
+      width:56px;
+      height:56px;
+      border-radius:12px;
+      box-shadow: 0 6px 20px rgba(255,107,0,0.12);
+      flex-shrink:0;
+      object-fit:cover;
+      background: var(--glass);
+      border:1px solid rgba(255,255,255,0.06);
+    }
+
+    h1{
+      margin:0;
+      font-size:1.25rem;
+      letter-spacing: -0.2px;
+    }
+
+    .subtitle{
+      margin:4px 0 0 0;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    main{
+      padding:var(--pad);
+      line-height:1.7;
+      display:grid;
+      gap:6px;
+    }
+
+    h2{
+      margin:18px 0 8px;
+      color:#fff;
+      font-size:1.05rem;
+    }
+
+    p{ margin:0 0 12px 0; color: #dce8f5; }
+
+    .callout{
+      margin:12px 0;
+      padding:14px;
+      border-radius:12px;
+      background: linear-gradient(180deg, rgba(255,107,0,0.04), rgba(255,107,0,0.02));
+      border:1px solid rgba(255,107,0,0.06);
+      color:#ffedd8;
+    }
+
+    ul{ margin:0 0 12px 20px; color:var(--muted); padding-left:18px }
+
+    footer{
+      padding:18px var(--pad);
+      border-top:1px solid rgba(255,255,255,0.02);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      background: linear-gradient(180deg, transparent, rgba(255,255,255,0.01));
+      color:var(--muted);
+      font-size:0.92rem;
+      flex-wrap:wrap;
+    }
+
+    .badge{
+      background:var(--glass);
+      padding:6px 10px;
+      border-radius:999px;
+      color:var(--muted);
+      font-weight:600;
+      font-size:0.9rem;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+
+    a{
+      color:var(--accent);
+      text-decoration:none;
+    }
+    a:hover{text-decoration:underline}
+
+    @media (max-width:960px){
+      body{ padding:28px 16px }
+      .container{ border-radius:12px }
+    }
+
+    @media (max-width:640px){
+      body{ padding:22px 10px }
+      header, main, footer{ padding:20px }
+      .logo{width:48px;height:48px}
+      h1{ font-size:1.1rem; line-height:1.3 }
+      h2{ font-size:1rem }
+      main{ gap:4px }
+      footer{ flex-direction:column; align-items:flex-start }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <img class="logo" src="./icon128.png" alt="Focus Pomodoro Timer icon" width="56" height="56" loading="lazy" />
+      <div>
+        <h1>Privacy Policy — Focus Pomodoro Timer</h1>
+        <div class="subtitle">Last updated: <strong>December 9, 2025</strong></div>
+      </div>
+    </header>
+
+    <main>
+      <p>This privacy policy explains how the Focus Pomodoro Timer browser extension handles data. The extension is intentionally minimal and privacy-focused. It stores only the information necessary for the timer to function, and all stored data stays on the user's device.</p>
+
+      <h2>What data this extension collects</h2>
+      <p><strong>Short answer:</strong> <em>None of your personal or browsing data is collected, transmitted, or shared.</em></p>
+
+      <p>The extension only uses local storage to persist the following timer state and preferences so the timer continues to work reliably across tabs and sessions:</p>
+      <ul>
+        <li>Work duration (minutes)</li>
+        <li>Break duration (minutes)</li>
+        <li>Current timer state (time remaining, whether it is running or paused, and whether it is a work or break session)</li>
+        <li>Notification preference (on/off for in-page popups)</li>
+      </ul>
+
+      <div class="callout" role="region" aria-label="Key privacy point">
+        No personally identifiable information, browsing history, location, communication content, or analytics are collected by the extension.
+      </div>
+
+      <h2>How data is stored</h2>
+      <p>All state and preferences are saved to <code>chrome.storage.local</code> (the browser's local storage). This data is stored on the user's device and is not uploaded to any external server.</p>
+
+      <h2>Permissions and why they are required</h2>
+      <p>The extension requests only the permissions that are necessary for its single purpose (running an on-page Pomodoro timer):</p>
+      <ul>
+        <li><strong>notifications</strong> — needed to show optional browser notifications when a work or break session starts or ends.</li>
+        <li><strong>storage</strong> — used to save user preferences and timer state so sessions persist across tabs and browser restarts.</li>
+        <li><strong>&lt;all_urls&gt; (content script match)</strong> — used to inject the floating timer widget into pages the user visits. The content script injects UI only and does not read or transmit page content.</li>
+      </ul>
+
+      <h2>Remote code</h2>
+      <p>The extension does <strong>not</strong> load any remote JavaScript, WebAssembly, or other executable code. All code (HTML, CSS, JavaScript) is packaged with the extension and executed locally in the browser.</p>
+
+      <h2>Third parties and data sharing</h2>
+      <p>There is no sharing, selling, or transfer of user data to third parties. The extension does not include analytics, advertising, or tracking libraries.</p>
+
+      <h2>Security</h2>
+      <p>Because the extension does not transmit data externally and stores only minimal preferences locally, the attack surface is small. Users should nonetheless keep their browser and extensions up to date to receive security fixes.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions or concerns about this privacy policy, please contact the developer at <a href="mailto:pgiridharan2002@gmail.com">pgiridharan2002@gmail.com</a>. Replace this email with your preferred contact address before publishing.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>We may update this privacy policy from time to time. When changes are made, the <strong>"Last updated"</strong> date at the top will be updated. Any material changes will be noted on this page.</p>
+
+    </main>
+
+    <footer>
+      <div class="badge">Focus Pomodoro Timer</div>
+      <div>© <span id="year"></span> Developer • <a href="mailto:pgiridharan2002@gmail.com">pgiridharan2002@gmail.com</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
